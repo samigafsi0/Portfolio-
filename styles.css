@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+}
+
+section:not(#navigation) {
+  min-height: 100vh;
+}
+
+#navigation {
+  height: 6rem;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: auto 0 auto 0;
+  width: 100%;
+  height: 100%;
+  padding-right: calc(0.5rem + 3vw);
+}
+
+.shortcut-button {
+  margin-left: calc(0.5rem + 3vw);
+  color: #103700;
+  font-size: 1.7rem;
+  font-family: Montserrat;
+}
+
+.shortcut-button:active,
+.shortcut-button:visited {
+  color: #457232;
+}
+
+.shortcut-button:hover {
+  color: #6e5e4d;
+  transition: color 0.3s, font-weight 0.1s;
+  font-weight: 700;
+}
+
+#welcome-section {
+  background: linear-gradient(#ffebcd, #817263);
+  text-align: center;
+  height: 100vh;
+  padding-top: 10vh;
+}
+
+#welcome-text {
+  margin-top: 35vh;
+}
+
+h1 {
+  font-size: 4.5em;
+  font-weight: bold;
+  margin-bottom: 3vh;
+  font-family: Lato;
+  color: #103700;
+  font-style: italic;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.7rem;
+  font-weight: 200;
+  font-family: Dosis;
+  color: #457232;
+}
+
+#projects {
+  background: linear-gradient(#817263, #ffebcd, #817263);
+  color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 9rem;
+  font-size: 3.5rem;
+  font-family: Lato;
+  color: #103700;
+  font-style: italic;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#early-projects {
+  display: flex;
+  width: 75vw;
+  flex-flow: row wrap;
+  margin: 5vh auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-picture {
+  width: 100%;
+}
+
+.project-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.project-link {
+  width: 100%;
+  height: 100%;
+}
+
+h5 {
+  color: #457232;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: Raleway;
+}
+
+.button-project a:hover,
+#button-box a:hover {
+  text-decoration: underline #457232;
+}
+
+.button-project {
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+#button-box {
+  background-color: #332f29;
+  width: 250px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  background: linear-gradient(#817263, #ffebcd, #000000);
+  color: #174f00;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: spacearound;
+  align-items: center;
+  height: 100vh;
+  padding-top: 30vh;
+}
+
+.contact-present {
+  text-align: center;
+}
+
+p {
+  color: #174f00;
+  font-size: 1.8rem;
+  font-family: Lato;
+  font-weight: 900;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  width: 80vw;
+  margin-top: 10vh;
+}
+
+.contact-link:hover {
+  transform: scale(1.5);
+  transition: transform 0.7s ease-out;
+}
+
+.contact-link {
+  transition: transform 0.5s ease-out;
+}
+
+@keyframes animation0 {
+  0% {
+    box-shadow: 0 0 50px 10px;
+  }
+
+  25% {
+    box-shadow: 0 0 90px 35px;
+  }
+
+  50% {
+    box-shadow: 0 0 50px 10px;
+  }
+
+  100% {
+    box-shadow: 0 0 50px 10px;
+  }
+}
+
+.project-tile {
+  width: 300px;
+  background-color: #332f29;
+  height: 400px;
+  margin: 20px;
+  color: black;
+  animation: animation0 6s infinite ease-in-out;
+  box-shadow: 0 0 50px 10px;
+}
+
+#project-1 {
+  animation-delay: 0s;
+}
+
+#project-2 {
+  animation-delay: 1.5s;
+}
+
+#project-3 {
+  animation-delay: 3s;
+}
+
+#project-4 {
+  animation-delay: 4.5s;
+}
+
+#project-1:hover,
+#project-2:hover,
+#project-3:hover,
+#project-4:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #navigation {
+    height: 5rem;
+  }
+
+  #navbar {
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  #welcome-section h1 {
+    margin: 0 10vh 4vh 10vh;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  #projects h2 {
+    margin: 9rem 10vh 0 10vh;
+  }
+
+  #contact {
+    padding-top: 27vh;
+  }
+
+  .contact-links {
+    margin-top: 8vh;
+  }
+
+  .contact-link {
+    margin: 15px;
+  }
+
+  p {
+    font-size: 1.65rem;
+  }
+}
